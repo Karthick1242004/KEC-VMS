@@ -21,7 +21,7 @@ function Tableadmin() {
   }, []);
 
   const fetchData = () => {
-    axios.get('http://localhost:8000/businfo')
+    axios.get('https://kec-vms.onrender.com/businfo')
       .then(response => {
         if (Array.isArray(response.data)) {
           setTableData(response.data);
