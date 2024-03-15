@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faCopyright } from '@fortawesome/free-solid-svg-icons';
+
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -10,7 +9,6 @@ const Navbar = ({ showMenu, toggleMenu }) => {
       <nav data-aos="zoom-in">
         <input type="checkbox" id="check" checked={showMenu} />
         <label htmlFor="check" className="checkbtn" onClick={toggleMenu}>
-          <FontAwesomeIcon icon={faBars} />
         </label>
         <label className="logo">
           Kongu - VMS
