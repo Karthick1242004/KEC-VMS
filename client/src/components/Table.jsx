@@ -13,7 +13,7 @@ function Table() {
 
   useEffect(() => {
     // Fetch data from the server when the component mounts
-    axios.get('http://localhost:8000/businfo')
+    axios.get('https://kec-vms.onrender.com/businfo')
       .then(response => {
         if (Array.isArray(response.data)) {
           setTableData(response.data);
