@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import To from './Table.module.css';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquarePlus, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import moment from 'moment'
@@ -142,7 +140,7 @@ function Tableadmin() {
               <td className={To.column}>{dateFormat(data.next_service)}</td>
               <td className={To.column}>
                 <div className={To.icons1}>
-                  <FontAwesomeIcon icon={faTrash} className={To.iconn} onClick={() => handleDeleteRow(data._id)} />
+                 <button onClick={() => handleDeleteRow(data._id)} >Delete</button>
                 </div>
               </td>
             </tr>
