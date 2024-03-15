@@ -25,7 +25,7 @@ const Addinfo = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:8000/addData', formData)
+    axios.post('https://kec-vms.onrender.com/addData', formData)
       .then(response => {
         toast.success("Added Successfully")
         console.log('Data added successfully:', response);
