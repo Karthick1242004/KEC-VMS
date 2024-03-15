@@ -47,7 +47,7 @@ function Tableadmin() {
     const shouldDelete = window.confirm('Are you sure you want to delete this row?');
     console.log(id)
     if (shouldDelete) {
-      const res= await axios.delete(`http://localhost:8000/delete/${id}`)
+      const res= await axios.delete(`https://kec-vms.onrender.com/delete/${id}`)
       .then((res)=> {
         toast.success('deleted successfully');
          fetchData();})
