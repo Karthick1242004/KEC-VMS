@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Average+Sans&family=Grand+Hotel&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+.main{
+    font-family: "Poppins";
+    text-align: center;
+    margin: auto;
+    padding: 0% 14%;
+    
+}
+.main h1{
+    font-weight: 700;
+    font-size: 60px;
+    margin-top: -20%;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 2s ;
+}
+.main p{
+    font-size: 18px;
+    color: rgb(152, 151, 151);
+    margin-top: -3%;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 2.5s ;
+}
+input[type=search]{
+    width: 20%;
+    border: none;
+    border-radius: 5px;
+    padding-left: 2%;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid rgb(146, 146, 146);
+}
+.icn1{
+    position: relative;
+    right: 3%;
+}
+.main1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3%;
+    flex-wrap: wrap;
+}
+.img1{
+    width: 80%;
+    margin-top: -17%;
+    animation: 3s bus ease-in-out;
+    z-index: -999;
+}
+.drive{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(5, 201, 113);
+    width: 160px;
+    height: 60px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 3.5s ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.drive:hover{
+    background-color: rgb(50, 188, 126);
+    box-shadow: rgb(81, 99, 119) 0px 20px 30px -10px;
+}
+.span1{
+    animation:400ms span ease-in-out;
+    animation-delay: 0s;
+    
+}
+.span2{
+    animation: 400ms span ease-in-out;
+    animation-delay: 500ms;
+}
+.span3{
+    animation:400ms span ease-in-out;
+    animation-delay: 1000ms ;
+}
+.span4{
+    animation: span ease-in-out;
+    animation-delay: 1500ms;
+}
+.span5{
+    animation:400ms span ease-in-out;
+    animation-delay: 2000ms;
+}
+span3{
+    color: rgb(5, 201, 113);
+}
+span6{
+    color: rgb(5, 201, 113);
+   
+}
+.busd{
+    margin-top: 40%;
+}
+.busd h1{
+    font-size: 30px;
+}
+.busd p{
+    text-align: justify;
+    width: 100%;
+    margin: auto;
+    color: rgb(168, 168, 168);
+    font-size: 14px;
+    margin-top: 3%;
+}
+.busd1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.bud1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+}
+.bud2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.deg{
+    text-align: center;
+    margin-top: 10%;
+    color: rgb(137, 137, 137);
+}
+.deg a{
+    text-decoration: none;
+    color: rgb(137, 137, 137);
+}
+@keyframes bus {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes span {
+    0%{
+        transform: translatey(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes slideLeft {
+    0%{
+       transform: translateX(100px); 
+       opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
